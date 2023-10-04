@@ -1,4 +1,4 @@
---likelyhood of dying if you contract covid in your country
+--likelyhood of dying if you contract covid in Georgia
 select location, date, total_cases,total_deaths, (total_deaths/total_cases)*100 as DeathPercentage
 from CovidDeaths$
 where total_deaths != 0 and location like '%georgia%'
